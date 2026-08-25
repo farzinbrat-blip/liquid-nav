@@ -1,0 +1,10 @@
+:{$PORT} {
+    root * .
+    encode gzip zstd
+    file_server {
+        index index.html
+    }
+    header {
+        Access-Control-Allow-Origin *
+    }
+}
